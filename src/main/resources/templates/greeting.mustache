@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+    var i, j;
+    var table = document.createElement('table');
+    document.body.appendChild(table)
+    for (i = 0; i < 8; i++) {
+        var row = document.createElement('tr');
+        table.appendChild(row);
+        for (j = 0; j < 8; j++) {
+            var cell = document.createElement('td');
+            cell.textContent = i * 8 + j;
+            cell.style.border = 'thin solid black';
+            row.appendChild(cell);
+        }
+    }
+</script>
+</body>
+</html>
